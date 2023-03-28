@@ -25,9 +25,11 @@
         <h1 class="text-center my-3">JGL WI-FI Analyzer</h1>
       </div>
       <div class="container justify-content-start">
-        <button class="btn btn-outline-success" type="submit">
-          <i class="fa-solid fa-play"></i>
-        </button>
+        <div class="bd-example">
+          <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
         <form class="d-flex ms-4" role="search">
           <input
             class="form-control me-2"
@@ -44,7 +46,41 @@
           <button class="btn btn-outline-success ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">
             5.0GHz <i class="fa-solid fa-wifi"></i>
           </button>
+          
         </form>
+        
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 id="exampleModalCenterTitle" class="modal-title fs-5">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Confimar</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="client/index.html">Cadastre-se</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
     <div class="container text-center">
